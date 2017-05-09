@@ -8,7 +8,7 @@ package Clases;
 import java.io.Serializable;
 
 /**
- *
+ ***
  * @author SebastianMaturanac
  */
 public class Persona implements Serializable{
