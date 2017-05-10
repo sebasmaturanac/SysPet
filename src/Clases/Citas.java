@@ -9,6 +9,10 @@ package Clases;
  *
  * @author SebastianMaturanac
  */
+/**
+ *
+ * @author SebastianMaturanac
+ */
 public class Citas {
     
    private String  Nombre;
