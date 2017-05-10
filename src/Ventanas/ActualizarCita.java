@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author yefers
+ * @author sebasmaturanac
  */
 public class ActualizarCita extends javax.swing.JInternalFrame {
 
