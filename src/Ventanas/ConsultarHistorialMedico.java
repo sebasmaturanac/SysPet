@@ -7,7 +7,7 @@ package Ventanas;
 
 /**
  *
- * @author yefers
+ * @author sebasmaturanac
  */
 public class ConsultarHistorialMedico extends javax.swing.JInternalFrame {
 

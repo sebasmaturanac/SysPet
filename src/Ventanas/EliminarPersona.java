@@ -7,7 +7,7 @@ package Ventanas;
 
 /**
  *
- * @author yefers
+ * @author sebasmaturanac
  */
 public class EliminarPersona extends javax.swing.JInternalFrame {
 

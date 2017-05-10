@@ -13,7 +13,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Pariona
+ * @author sebasmaturanac
  */
 public class InsertarCliente extends javax.swing.JInternalFrame {
     //DefaultTableModel tabla = new DefaultTableModel();

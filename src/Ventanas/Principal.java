@@ -11,7 +11,7 @@ import Clases.PersistenciaPersona;
 
 /**
  *
- * @author Pariona
+ * @author sebasmaturanac
  */
 public class Principal extends javax.swing.JFrame {
     

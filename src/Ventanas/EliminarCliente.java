@@ -7,7 +7,7 @@ package Ventanas;
 
 /**
  *
- * @author yefers
+ * @author sebasmaturanac
  */
 public class EliminarCliente extends javax.swing.JInternalFrame {
 

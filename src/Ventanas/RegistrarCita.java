@@ -7,7 +7,7 @@ package Ventanas;
 
 /**
  *
- * @author yefers
+ * @author sebasmaturanac
  */
 public class RegistrarCita extends javax.swing.JInternalFrame {
 

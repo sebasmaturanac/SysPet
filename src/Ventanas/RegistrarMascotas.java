@@ -15,7 +15,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author yefers
+ * @author sebasmaturanac
  */
 public class RegistrarMascotas extends javax.swing.JInternalFrame {
 

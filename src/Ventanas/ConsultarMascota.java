@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author yefers
+ * @author sebasmaturanac
  */
 public class ConsultarMascota extends javax.swing.JInternalFrame {
 

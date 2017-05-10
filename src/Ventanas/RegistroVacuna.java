@@ -7,7 +7,7 @@ package Ventanas;
 
 /**
  *
- * @author yefers
+ * @author sebasmaturanac
  */
 public class RegistroVacuna extends javax.swing.JInternalFrame {
 

@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author yefers
+ * @author sebasmaturanac
  */
 public class ConsultarCliente extends javax.swing.JInternalFrame {
 

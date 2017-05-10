@@ -7,7 +7,7 @@ package Ventanas;
 
 /**
  *
- * @author yefers
+ * @author sebasmaturanac
  */
 public class InsertarHistorialMedico extends javax.swing.JInternalFrame {
 

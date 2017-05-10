@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author SebastianMaturanac
+ * @author sebasmaturanac
  */
 public class InsertarPersona extends javax.swing.JInternalFrame {
 

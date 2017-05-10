@@ -7,7 +7,7 @@ package Ventanas;
 
 /**
  *
- * @author yefers
+ * @author sebasmaturanac
  */
 public class ConsultaCitas extends javax.swing.JInternalFrame {
 
