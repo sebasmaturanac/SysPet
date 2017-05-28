@@ -186,7 +186,21 @@ public class ActualizarCita extends javax.swing.JInternalFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnactuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnactuActionPerformed
-         Citas   ci  = new  Citas ();
+       // buscas datos en la db
+       
+       
+       
+       //Recorres el ResultSet y los agregas a lista "Citas"
+       
+       
+       
+       //Actualizar el modelo de la tabla (TableModel) con la lista
+       
+       
+       //Asignar el modelo a la tabla TablaCitas
+       
+        
+                   Citas   ci  = new  Citas ();
           ArrayList<Cliente> listado =  PersistenciaCliente.LoadData();
           ci.setNombre(txtNom.getText());
           ci.setApelllido(txtApe.getText());
