@@ -14,18 +14,19 @@ import java.io.Serializable;
 public class Mascota implements Serializable{
     private int id;
     private String nombreCli;
-    private String Dni;
+    private String dniCli;
     private String nombreMas;
     private String color;
+    private String sexo;
     private String raza;
     private String edad;
-    private double pezo;
-    private String sexo;
+    private double peso;
+    private Date fechaNac;
+   
 
     public int getId() {
         return id;
     }
-
     public void setId(int id) {
         this.id = id;
     }
@@ -80,11 +81,11 @@ public class Mascota implements Serializable{
     }
 
     public double getPezo() {
-        return pezo;
+        return peso;
     }
 
     public void setPezo(double pezo) {
-        this.pezo = pezo;
+        this.peso = pezo;
     }
 
     public String getSexo() {

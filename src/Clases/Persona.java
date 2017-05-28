@@ -14,8 +14,11 @@ import java.io.Serializable;
 public class Persona implements Serializable{
     private Cliente nombre;
     private Cliente apellidos;
+    private Cliente dni;
     private Cliente direccion;
-    private Cliente telefono;
+    private Cliente celular;
+    private Cliente correo;
+    
 
     public Cliente getNombre() {
         return nombre;
@@ -32,6 +35,13 @@ public class Persona implements Serializable{
     public void setApellidos(Cliente apellidos) {
         this.apellidos = apellidos;
     }
+    public Cliente getDni(){
+        return dni;
+    }
+    
+    public void setDni(Cliente dni){
+        this.dni=dni;
+    }
 
     public Cliente getDireccion() {
         return direccion;
@@ -41,12 +51,12 @@ public class Persona implements Serializable{
         this.direccion = direccion;
     }
 
-    public Cliente getTelefono() {
-        return telefono;
+    public Cliente getCelular() {
+        return celular;
     }
 
-    public void setTelefono(Cliente telefono) {
-        this.telefono = telefono;
+    public void setCelular(Cliente celular) {
+        this.celular = celular;
     }
     
     
