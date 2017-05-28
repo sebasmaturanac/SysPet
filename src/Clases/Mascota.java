@@ -14,14 +14,16 @@ import java.io.Serializable;
 public class Mascota implements Serializable{
     private int id;
     private String nombreCli;
-    private String dniCli;
+    private String dni;
     private String nombreMas;
     private String color;
     private String sexo;
     private String raza;
     private String edad;
     private double peso;
-    private Date fechaNac;
+    private int dia;
+    private int mes;
+    private int año;
    
 
     public int getId() {
@@ -41,11 +43,11 @@ public class Mascota implements Serializable{
     }
 
     public String getDni() {
-        return Dni;
+        return dni;
     }
 
     public void setDni(String Dni) {
-        this.Dni = Dni;
+        this.dni = Dni;
     }
 
     public String getNombreMas() {
@@ -62,6 +64,15 @@ public class Mascota implements Serializable{
 
     public void setColor(String color) {
         this.color = color;
+    }
+    
+    public String getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+     
     }
 
     public String getRaza() {
@@ -84,18 +95,36 @@ public class Mascota implements Serializable{
         return peso;
     }
 
-    public void setPezo(double pezo) {
-        this.peso = pezo;
+    public void setPeso(double peso) {
+        this.peso = peso;
     }
 
-    public String getSexo() {
-        return sexo;
+    public int setdia (){
+        return dia;
+    }
+    
+    public void getdia (int dia){
+        this.dia = dia;
+    }
+    
+      public int setmes (){
+        return mes;
+    }
+    
+    public void getmes (int mes){
+        this.mes = mes;
+    }
+    
+      public int setaño (){
+        return año;
+    }
+    
+    public void getaño (int año){
+        this.año = año;
     }
 
-    public void setSexo(String sexo) {
-        this.sexo = sexo;
+    public String getaño() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
-    
     
 }

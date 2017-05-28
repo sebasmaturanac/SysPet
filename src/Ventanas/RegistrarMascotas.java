@@ -280,7 +280,7 @@ public class RegistrarMascotas extends javax.swing.JInternalFrame {
         ani.setColor(txtcolor.getText());
         ani.setRaza(txtraza.getText());
         ani.setEdad(txtedad.getText());
-        ani.setPezo(Double.parseDouble(txtpeso.getText()));
+        ani.setPeso(Double.parseDouble(txtpeso.getText()));
         ani.setSexo((String)cbSexo.getSelectedItem());
         ani.setId(Integer.parseInt(txtid.getText()));
         listado.add(ani);
