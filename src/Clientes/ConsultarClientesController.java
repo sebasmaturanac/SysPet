@@ -31,6 +31,8 @@ public class ConsultarClientesController {
     public ConsultarClientesController(Clientes modelo, ConsultarClientesView vista){
         this.modelo = modelo;
         this.vista = vista; 
+        
+        this.init();
     }
     
     
@@ -38,11 +40,12 @@ public class ConsultarClientesController {
     public void init(){
         
         JButton btnConsultar = this.vista.getBtnConsultar();
-        
+      
         
         btnConsultar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(vista, "cochi en sovos");
                 consultarClientes();
                 
             }
