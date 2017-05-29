@@ -5,7 +5,7 @@
  */
 package Ventanas;
 
-import Clases.Cliente;
+import Clientes.Cliente;
 import Clases.PersistenciaCliente;
 import java.beans.PersistenceDelegate;
 import java.util.ArrayList;
@@ -115,6 +115,7 @@ public class ConsultarCliente extends javax.swing.JInternalFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
          // TODO add your handling code here:
+         /*
         ArrayList<Cliente> listado = PersistenciaCliente.LoadData();
         String b = txtBuscar.getText();
             try{
@@ -133,7 +134,7 @@ public class ConsultarCliente extends javax.swing.JInternalFrame {
             
             JOptionPane.showMessageDialog(this, "solo numeros enteros");
             }
-        
+        */
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void btnConsulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsulActionPerformed
