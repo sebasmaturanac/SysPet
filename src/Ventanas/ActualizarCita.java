@@ -42,7 +42,7 @@ public class ActualizarCita extends javax.swing.JInternalFrame {
         txtApe = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        btnBuscarCitas = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jTextField2 = new javax.swing.JTextField();
@@ -92,10 +92,10 @@ public class ActualizarCita extends javax.swing.JInternalFrame {
 
         jLabel8.setText("Seleccione una cita en la lista para modificar fecha y/o horario");
 
-        jButton1.setText("Buscar Citas");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnBuscarCitas.setText("Buscar Citas");
+        btnBuscarCitas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnBuscarCitasActionPerformed(evt);
             }
         });
 
@@ -132,7 +132,7 @@ public class ActualizarCita extends javax.swing.JInternalFrame {
                                     .addComponent(txtApe, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(txtNom, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(43, 43, 43)
-                                .addComponent(jButton1))))
+                                .addComponent(btnBuscarCitas))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(42, 42, 42)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -161,7 +161,7 @@ public class ActualizarCita extends javax.swing.JInternalFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtApe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnBuscarCitas, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(24, 24, 24)
                 .addComponent(jLabel8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -197,6 +197,7 @@ public class ActualizarCita extends javax.swing.JInternalFrame {
        //Actualizar el modelo de la tabla (TableModel) con la lista
        
        
+       
        //Asignar el modelo a la tabla TablaCitas
        
         
@@ -204,10 +205,7 @@ public class ActualizarCita extends javax.swing.JInternalFrame {
           ArrayList<Cliente> listado =  PersistenciaCliente.LoadData();
           ci.setNombre(txtNom.getText());
           ci.setApelllido(txtApe.getText());
-          ci.setCorreo(txtCorr.getText());
-          ci.setTelefono(txtTelefono.getText());
-          ci.setFecha(txtFecha.getText());
-          ci.setDireccion(txtDireccion.getText());
+
           
           
           
@@ -217,9 +215,22 @@ public class ActualizarCita extends javax.swing.JInternalFrame {
 // TODO add your handling code here:
     }//GEN-LAST:event_btnactuActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void btnBuscarCitasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarCitasActionPerformed
+        //* buscas datos en la db
+       
+      
+       
+       //Recorres el ResultSet y los agregas a lista "Citas"
+       
+       
+       
+       //Actualizar el modelo de la tabla (TableModel) con la lista
+       
+       
+       
+       //Asignar el modelo a la tabla TablaCitas
+       
+    }//GEN-LAST:event_btnBuscarCitasActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
@@ -232,8 +243,8 @@ public class ActualizarCita extends javax.swing.JInternalFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable TablaCita;
+    private javax.swing.JButton btnBuscarCitas;
     private javax.swing.JButton btnactu;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
