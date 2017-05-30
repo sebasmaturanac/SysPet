@@ -5,18 +5,18 @@
  */
 package Mascota;
 
-import Clientes.*;
+import Mascota.*;
 
 /**
  *
  * @author yefers
  */
-public class ConsultarMascotaView extends javax.swing.JInternalFrame {
+public class EliminarMascotaView extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form ConsultarPersona
      */
-    public ConsultarMascotaView() {
+    public EliminarMascotaView() {
         initComponents();
     }
 
@@ -102,7 +102,7 @@ public class ConsultarMascotaView extends javax.swing.JInternalFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jLabel5.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
-        jLabel5.setText("Consultar Mascota");
+        jLabel5.setText("Eliminar Mascota");
 
         jLabel1.setIcon(new javax.swing.ImageIcon("D:\\SysPet\\src\\Resources\\LogoSysPet.png")); // NOI18N
 
@@ -266,7 +266,7 @@ public class ConsultarMascotaView extends javax.swing.JInternalFrame {
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(47, 47, 47)
+                .addGap(56, 56, 56)
                 .addComponent(jLabel4)
                 .addGap(18, 18, 18)
                 .addComponent(jTextField1)
@@ -284,7 +284,7 @@ public class ConsultarMascotaView extends javax.swing.JInternalFrame {
                 .addContainerGap(18, Short.MAX_VALUE))
         );
 
-        jButton2.setText("Imprimir Ficha de la Mascota");
+        jButton2.setText("Eliminar Mascota de la Base de Datos");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -347,16 +347,15 @@ public class ConsultarMascotaView extends javax.swing.JInternalFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(12, 12, 12)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(202, 202, 202)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(

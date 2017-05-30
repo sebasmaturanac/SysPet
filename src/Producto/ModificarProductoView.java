@@ -3,20 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Mascota;
+package Producto;
 
+import Mascota.*;
 import Clientes.*;
 
 /**
  *
  * @author yefers
  */
-public class ConsultarMascotaView extends javax.swing.JInternalFrame {
+public class ModificarProductoView extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form ConsultarPersona
      */
-    public ConsultarMascotaView() {
+    public ModificarProductoView() {
         initComponents();
     }
 

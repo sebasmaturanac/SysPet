@@ -111,9 +111,9 @@ public class Principal extends javax.swing.JFrame {
                 .addComponent(jLabel2)
                 .addContainerGap())
             .addGroup(escritorioLayout.createSequentialGroup()
-                .addGap(78, 78, 78)
+                .addGap(200, 200, 200)
                 .addComponent(jLabel3)
-                .addContainerGap(114, Short.MAX_VALUE))
+                .addContainerGap(0, Short.MAX_VALUE))
         );
         escritorioLayout.setVerticalGroup(
             escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
