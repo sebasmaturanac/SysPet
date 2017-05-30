@@ -5,6 +5,15 @@
  */
 package Ventanas;
 
+import Clientes.Clientes;
+import Clientes.ConsultarClientesController;
+import Clientes.ConsultarClientesView;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
+
 
 
 /**
@@ -17,9 +26,22 @@ public class Principal extends javax.swing.JFrame {
     /**
      * Creates new form Principal
      */
-    public Principal() {
+    public Principal() throws UnsupportedLookAndFeelException {
+        
+         try {
+                UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+         } catch (Exception ex) {
+         
+         }
+                         
         initComponents();
+        
+        
         setExtendedState(MAXIMIZED_BOTH);
+        
+        
+
+
     }
 
     /**
@@ -63,8 +85,7 @@ public class Principal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        escritorio.setBackground(new java.awt.Color(102, 153, 255));
-        escritorio.setForeground(new java.awt.Color(102, 153, 255));
+        escritorio.setBackground(new java.awt.Color(102, 204, 255));
         escritorio.setToolTipText("");
         escritorio.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
@@ -257,9 +278,7 @@ public class Principal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(escritorio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(escritorio)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -297,9 +316,22 @@ public class Principal extends javax.swing.JFrame {
 
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
         // TODO add your handling code here:
-        ConsultarCliente con = new ConsultarCliente();
+        /*ConsultarCliente con = new ConsultarCliente();
         con.setVisible(true);
-        escritorio.add(con);
+        escritorio.add(con);*/
+       
+        
+        Clientes clientes = new Clientes();
+        ConsultarClientesView consultarClientesView = new ConsultarClientesView();
+        ConsultarClientesController controller = new ConsultarClientesController(clientes, consultarClientesView);
+        
+        
+        consultarClientesView.setVisible(true);
+        escritorio.add(consultarClientesView);
+        
+        
+        
+        
     }//GEN-LAST:event_jMenuItem6ActionPerformed
 
     private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
@@ -360,7 +392,7 @@ public class Principal extends javax.swing.JFrame {
 
     private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
         // TODO add your handling code here:
-        ConsultarPersona conper = new ConsultarPersona();
+        ConsultarClientesView conper = new ConsultarClientesView();
         conper.setVisible(true);
         escritorio.add(conper);
     }//GEN-LAST:event_jMenuItem8ActionPerformed
@@ -399,7 +431,11 @@ public class Principal extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Principal().setVisible(true);
+                try {
+                    new Principal().setVisible(true);
+                } catch (UnsupportedLookAndFeelException ex) {
+                    Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
         });
     }

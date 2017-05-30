@@ -5,6 +5,7 @@
  */
 package Clases;
 
+import Clientes.Cliente;
 import java.io.Serializable;
 
 /**

@@ -5,7 +5,7 @@
  */
 package Ventanas;
 
-import Clases.Cliente;
+import Clientes.Cliente;
 import Clases.PersistenciaCliente;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
@@ -231,7 +231,7 @@ public class InsertarCliente extends javax.swing.JInternalFrame {
     private void btnInsertarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInsertarClienteActionPerformed
         Cliente cli = new Cliente();
         ArrayList<Cliente> listado =  PersistenciaCliente.LoadData();
-        cli.setId(Integer.parseInt(txtid.getText()));
+        //cli.setId(Integer.parseInt(txtid.getText()));
         cli.setNombre(txtNombre.getText());
         cli.setApellidos(txtApellido.getText());
         cli.setDireccion(txtDireccion.getText());
@@ -265,7 +265,8 @@ public class InsertarCliente extends javax.swing.JInternalFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        ArrayList<Cliente> listado = PersistenciaCliente.LoadData();
+        
+        /*ArrayList<Cliente> listado = PersistenciaCliente.LoadData();
         String b = txtBuscar.getText();
             try{
                 int b2 = Integer.parseInt(b);
@@ -283,6 +284,7 @@ public class InsertarCliente extends javax.swing.JInternalFrame {
             
             JOptionPane.showMessageDialog(this, "solo numeros enteros");
             }
+            */
     }//GEN-LAST:event_jButton1ActionPerformed
 public void  LimpiarTabla(){
         DefaultTableModel df = ((DefaultTableModel) TablaCliente.getModel());
@@ -292,12 +294,12 @@ public void  LimpiarTabla(){
         }
     }
     public void LlenarTable(){
-        LimpiarTabla();
+      /*  LimpiarTabla();
         ArrayList<Cliente> lista = PersistenciaCliente.LoadData();
         DefaultTableModel df = ((DefaultTableModel) TablaCliente.getModel());
         for (Cliente a : lista) {
             df.addRow(new Object[]{a.getNombre(), a.getApellidos(), a.getDireccion(), a.getTelefono(), a.getId()});
-        }
+        }*/
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable TablaCliente;

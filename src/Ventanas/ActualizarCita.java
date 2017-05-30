@@ -6,7 +6,7 @@
 package Ventanas;
 
 import Clases.Citas;
-import Clases.Cliente;
+import Clientes.Cliente;
 import Clases.PersistenciaCliente;
 import java.util.ArrayList;
 
@@ -216,6 +216,7 @@ public class ActualizarCita extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_btnactuActionPerformed
 
     private void btnBuscarCitasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarCitasActionPerformed
+<<<<<<< HEAD
         //* buscas datos en la db
        
       
@@ -230,6 +231,9 @@ public class ActualizarCita extends javax.swing.JInternalFrame {
        
        //Asignar el modelo a la tabla TablaCitas
        
+=======
+        // TODO add your handling code here:
+>>>>>>> 8ed85007db954e25b55cad5f6e2d1f4b58c8ef72
     }//GEN-LAST:event_btnBuscarCitasActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed

@@ -5,7 +5,7 @@
  */
 package Ventanas;
 
-import Clases.Cliente;
+import Clientes.Cliente;
 import Clases.Mascota;
 import Clases.PersistenciaCliente;
 import Clases.PersistenciaMascota;
