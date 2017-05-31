@@ -58,7 +58,7 @@ public class RegistrarCitaView extends javax.swing.JInternalFrame {
 
         setClosable(true);
         setIconifiable(true);
-        setTitle("Clientes - Consulta");
+        setTitle("Registrar Cita");
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());

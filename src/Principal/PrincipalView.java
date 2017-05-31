@@ -3,11 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Ventanas;
+package Principal;
 
 import Clientes.Clientes;
 import Clientes.ConsultarClientesController;
 import Clientes.ConsultarClientesView;
+import Ventanas.ActualizarCita;
+import Ventanas.ConsultaCitas;
+import Ventanas.ConsultaVacunas;
+import Ventanas.ConsultarHistorialMedico;
+import Ventanas.EliminarCliente;
+import Ventanas.EliminarPersona;
+import Ventanas.InsertarCliente;
+import Ventanas.InsertarHistorialMedico;
+import Ventanas.RegistrarCita;
+import Ventanas.RegistrarMascotas;
+import Ventanas.RegistroVacuna;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -20,13 +31,13 @@ import javax.swing.UnsupportedLookAndFeelException;
  *
  * @author sebasmaturanac
  */
-public class Principal extends javax.swing.JFrame {
+public class PrincipalView extends javax.swing.JFrame {
     
 
     /**
      * Creates new form Principal
      */
-    public Principal() throws UnsupportedLookAndFeelException {
+    public PrincipalView() throws UnsupportedLookAndFeelException {
         
          try {
                 UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
@@ -113,7 +124,7 @@ public class Principal extends javax.swing.JFrame {
             .addGroup(escritorioLayout.createSequentialGroup()
                 .addGap(200, 200, 200)
                 .addComponent(jLabel3)
-                .addContainerGap(0, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         escritorioLayout.setVerticalGroup(
             escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -428,23 +439,24 @@ public class Principal extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PrincipalView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PrincipalView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PrincipalView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PrincipalView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
-                    new Principal().setVisible(true);
+                    new PrincipalView().setVisible(true);
                 } catch (UnsupportedLookAndFeelException ex) {
-                    Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(PrincipalView.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
         });
