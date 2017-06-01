@@ -57,7 +57,7 @@ public class RegistrarClientesView extends javax.swing.JInternalFrame {
 
         setClosable(true);
         setIconifiable(true);
-        setTitle("Clientes - Consulta");
+        setTitle("Registrar Cliente");
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -94,18 +94,47 @@ public class RegistrarClientesView extends javax.swing.JInternalFrame {
 
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder("Ingresar Datos del Cliente"));
 
+        fdClienteDNI1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fdClienteDNI1ActionPerformed(evt);
+            }
+        });
+
+        fdApellido1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fdApellido1ActionPerformed(evt);
+            }
+        });
+
         jLabel8.setText("Apellidos");
 
         jLabel11.setText("D.N.I.");
 
         jLabel12.setText("Nombres");
 
+        fdApellido2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fdApellido2ActionPerformed(evt);
+            }
+        });
+
         jLabel14.setText("Dirección");
+
+        fdApellido4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fdApellido4ActionPerformed(evt);
+            }
+        });
 
         jLabel16.setText("Celular");
 
+        fdApellido6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fdApellido6ActionPerformed(evt);
+            }
+        });
+
         jLabel7.setIcon(new javax.swing.ImageIcon("D:\\SysPet\\src\\Resources\\NewUser.png")); // NOI18N
-        jLabel7.setMaximumSize(new java.awt.Dimension(128, 128));
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -132,7 +161,7 @@ public class RegistrarClientesView extends javax.swing.JInternalFrame {
                         .addGap(18, 18, 18)
                         .addComponent(fdApellido2, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 152, Short.MAX_VALUE)
-                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel7)
                 .addContainerGap())
         );
         jPanel4Layout.setVerticalGroup(
@@ -160,7 +189,7 @@ public class RegistrarClientesView extends javax.swing.JInternalFrame {
                     .addComponent(jLabel16)))
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jLabel7))
         );
 
         jButton1.setText("Guardar Cliente");
@@ -206,6 +235,26 @@ public class RegistrarClientesView extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void fdApellido2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fdApellido2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fdApellido2ActionPerformed
+
+    private void fdApellido1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fdApellido1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fdApellido1ActionPerformed
+
+    private void fdClienteDNI1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fdClienteDNI1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fdClienteDNI1ActionPerformed
+
+    private void fdApellido4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fdApellido4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fdApellido4ActionPerformed
+
+    private void fdApellido6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fdApellido6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fdApellido6ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField fdApellido1;
@@ -231,36 +280,5 @@ public class RegistrarClientesView extends javax.swing.JInternalFrame {
     private javax.swing.JPanel jPanel4;
     // End of variables declaration//GEN-END:variables
 
-    /**
-     * @return the btnConsultar
-     */
-    public javax.swing.JButton getBtnConsultar() {
-        return btnConsultar;
-    }
-
-    /**
-     * @return the btnImpirmirFicha
-     */
-    /**/
-
-    /**
-     * @return the fdApellido
-     */
-    public javax.swing.JTextField getFdApellido() {
-        return fdApellido;
-    }
-
-    /**
-     * @return the fdClienteDNI
-     */
-    public javax.swing.JTextField getFdClienteDNI() {
-        return fdClienteDNI;
-    }
-
-    /**
-     * @return the tbClientes
-     */
-    public javax.swing.JTable getTbClientes() {
-        return tbClientes;
-    }
+    
 }
