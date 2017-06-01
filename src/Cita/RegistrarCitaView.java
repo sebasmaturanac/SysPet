@@ -212,7 +212,7 @@ public class RegistrarCitaView extends javax.swing.JInternalFrame {
 
         jLabel12.setText("(La cita tiene una duracion de 30 min, en caso de necesitar mas tiempo");
 
-        jLabel13.setText("habilite la opcion de \"Cita Especial\" y agregue una hora de duracion)");
+        jLabel13.setText("habilite la opcion de \"Cita Especial\" y agregue una hora de finalización)");
 
         jLabel14.setText("Ingresar Hora de finalización de Cita:");
 

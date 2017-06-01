@@ -159,14 +159,11 @@ public class ConsultarClientesController {
             
         }catch(Exception ex){
             System.out.println("Exception -> " + ex);
-        }
-        
-
-        
-        
+      }
+                 
                 
     }
-        
+  
 
     
 }

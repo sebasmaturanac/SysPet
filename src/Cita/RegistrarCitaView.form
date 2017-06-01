@@ -404,7 +404,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel13">
       <Properties>
-        <Property name="text" type="java.lang.String" value="habilite la opcion de &quot;Cita Especial&quot; y agregue una hora de duracion)"/>
+        <Property name="text" type="java.lang.String" value="habilite la opcion de &quot;Cita Especial&quot; y agregue una hora de finalizaci&#xf3;n)"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel14">
