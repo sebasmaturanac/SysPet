@@ -5,23 +5,19 @@
  */
 package Principal;
 
+import Cita.ConsultarCitaView;
+import Cita.RegistrarCitaView;
 import Clientes.Clientes;
 import Clientes.ConsultarClientesController;
 import Clientes.ConsultarClientesView;
-import Ventanas.ActualizarCita;
-import Ventanas.ConsultaCitas;
-import Ventanas.ConsultaVacunas;
-import Ventanas.ConsultarHistorialMedico;
-import Ventanas.EliminarCliente;
-import Ventanas.EliminarPersona;
-import Ventanas.InsertarCliente;
-import Ventanas.InsertarHistorialMedico;
-import Ventanas.RegistrarCita;
-import Ventanas.RegistrarMascotas;
+import Clientes.RegistrarClientesView;
+import Mascota.ConsultarMascotaView;
+import Mascota.EliminarMascotaView;
+import Mascota.RegistrarMascotaView;
+import Producto.RegistrarProductoView;
 import Ventanas.RegistroVacuna;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
@@ -105,6 +101,7 @@ public class PrincipalView extends javax.swing.JFrame {
 
         jLabel2.setText("Habilitacion Profesional - Sebastian Maturana ");
 
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setIcon(new javax.swing.ImageIcon("D:\\SysPet\\src\\Resources\\perro_medico_esterilizar.png")); // NOI18N
 
         escritorio.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -213,6 +210,11 @@ public class PrincipalView extends javax.swing.JFrame {
         jMenu8.add(jMenuItem19);
 
         jCheckBoxMenuItem1.setText("Cargar Producto");
+        jCheckBoxMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxMenuItem1ActionPerformed(evt);
+            }
+        });
         jMenu8.add(jCheckBoxMenuItem1);
 
         jMenuItem20.setText("Control de Stock de Productos");
@@ -315,24 +317,21 @@ public class PrincipalView extends javax.swing.JFrame {
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         // TODO add your handling code here:
-        RegistrarMascotas inper = new RegistrarMascotas();
+        RegistrarMascotaView inper = new RegistrarMascotaView();
         inper.setVisible(true);
         escritorio.add(inper);
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
         // TODO add your handling code here:
-        InsertarCliente  obj = new InsertarCliente();
+        RegistrarClientesView  obj = new RegistrarClientesView();
         obj.setVisible(true);
         escritorio.add(obj);
    
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
-        // TODO add your handling code here:
-        EliminarCliente eli = new EliminarCliente();
-        eli.setVisible(true);
-        escritorio.add(eli);
+        
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
@@ -357,21 +356,18 @@ public class PrincipalView extends javax.swing.JFrame {
 
     private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
         // TODO add your handling code here:
-        RegistrarCita reci = new RegistrarCita();
+        RegistrarCitaView reci = new RegistrarCitaView();
         reci.setVisible(true);
         escritorio.add(reci);
     }//GEN-LAST:event_jMenuItem11ActionPerformed
 
     private void jMenuItem12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem12ActionPerformed
-        // TODO add your handling code here:
-        ActualizarCita acci = new ActualizarCita();
-        acci.setVisible(true);
-        escritorio.add(acci);
+    
     }//GEN-LAST:event_jMenuItem12ActionPerformed
 
     private void jMenuItem13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem13ActionPerformed
         // TODO add your handling code here:
-        ConsultaCitas conci = new ConsultaCitas();
+        ConsultarCitaView conci = new ConsultarCitaView();
         conci.setVisible(true);
         escritorio.add(conci);
     }//GEN-LAST:event_jMenuItem13ActionPerformed
@@ -384,36 +380,27 @@ public class PrincipalView extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem14ActionPerformed
 
     private void jMenuItem15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem15ActionPerformed
-        // TODO add your handling code here:
-        ConsultaVacunas conva = new ConsultaVacunas();
-        conva.setVisible(true);
-        escritorio.add(conva);
+        
     }//GEN-LAST:event_jMenuItem15ActionPerformed
 
     private void jMenuItem16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem16ActionPerformed
-        // TODO add your handling code here:
-        InsertarHistorialMedico inhis = new InsertarHistorialMedico();
-        inhis.setVisible(true);
-        escritorio.add(inhis);
+        
     }//GEN-LAST:event_jMenuItem16ActionPerformed
 
     private void jMenuItem17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem17ActionPerformed
-        // TODO add your handling code here:
-        ConsultarHistorialMedico conhismes = new ConsultarHistorialMedico();
-        conhismes.setVisible(true);
-        escritorio.add(conhismes);
+       
     }//GEN-LAST:event_jMenuItem17ActionPerformed
 
     private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
         // TODO add your handling code here:
-        EliminarPersona eliper = new EliminarPersona();
+        EliminarMascotaView eliper = new EliminarMascotaView();
         eliper.setVisible(true);
         escritorio.add(eliper);
     }//GEN-LAST:event_jMenuItem7ActionPerformed
 
     private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
         // TODO add your handling code here:
-        ConsultarClientesView conper = new ConsultarClientesView();
+        ConsultarMascotaView conper = new ConsultarMascotaView();
         conper.setVisible(true);
         escritorio.add(conper);
     }//GEN-LAST:event_jMenuItem8ActionPerformed
@@ -421,6 +408,12 @@ public class PrincipalView extends javax.swing.JFrame {
     private void jMenuItem18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem18ActionPerformed
        // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem18ActionPerformed
+
+    private void jCheckBoxMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxMenuItem1ActionPerformed
+        RegistrarProductoView inper = new RegistrarProductoView();
+        inper.setVisible(true);
+        escritorio.add(inper);        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBoxMenuItem1ActionPerformed
 
     /**
      * @param args the command line arguments

@@ -6,6 +6,9 @@
 package Cita;
 
 import Cita.*;
+import Clientes.*;
+import Mascota.*;
+
 
 /**
  *
@@ -107,33 +110,5 @@ public class CalendarioCitaView extends javax.swing.JInternalFrame {
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 
-    /**
-     * @return the btnConsultar
-     */
-    public javax.swing.JButton getBtnConsultar() {
-        return btnConsultar;
-    }
 
-    /**
-     * @return the btnImpirmirFicha
-     */
-    /**/
-
-    /**
-     * @return the fdApellido
-     */
-    public javax.swing.JTextField getFdApellido() {
-        return fdApellido;
-    }
-
-    /**
-     * @return the fdClienteDNI
-     */
-    public javax.swing.JTextField getFdClienteDNI() {
-        return fdClienteDNI;
-    }
-
-    /**
-     * @return the tbClientes
-     */
 }
