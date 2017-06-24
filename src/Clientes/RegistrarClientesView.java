@@ -12,6 +12,48 @@ package Clientes;
 public class RegistrarClientesView extends javax.swing.JInternalFrame {
 
     /**
+     * @return the btnGuardarCliente
+     */
+    public javax.swing.JButton getBtnGuardarCliente() {
+        return btnGuardarCliente;
+    }
+
+    /**
+     * @return the fdApellido
+     */
+    public javax.swing.JTextField getFdApellido() {
+        return fdApellido;
+    }
+
+    /**
+     * @return the fdCelular
+     */
+    public javax.swing.JTextField getFdCelular() {
+        return fdCelular;
+    }
+
+    /**
+     * @return the fdClienteDNI
+     */
+    public javax.swing.JTextField getFdClienteDNI() {
+        return fdClienteDNI;
+    }
+
+    /**
+     * @return the fdDireccion
+     */
+    public javax.swing.JTextField getFdDireccion() {
+        return fdDireccion;
+    }
+
+    /**
+     * @return the fdNombre
+     */
+    public javax.swing.JTextField getFdNombre() {
+        return fdNombre;
+    }
+
+    /**
      * Creates new form ConsultarPersona
      */
     public RegistrarClientesView() {
@@ -36,18 +78,18 @@ public class RegistrarClientesView extends javax.swing.JInternalFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
-        fdClienteDNI1 = new javax.swing.JTextField();
-        fdApellido1 = new javax.swing.JTextField();
+        fdClienteDNI = new javax.swing.JTextField();
+        fdApellido = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        fdApellido2 = new javax.swing.JTextField();
+        fdNombre = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
-        fdApellido4 = new javax.swing.JTextField();
+        fdDireccion = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
-        fdApellido6 = new javax.swing.JTextField();
+        fdCelular = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        btnGuardarCliente = new javax.swing.JButton();
 
         jLabel9.setIcon(new javax.swing.ImageIcon("D:\\SysPet\\src\\Resources\\LogoSysPet.png")); // NOI18N
 
@@ -94,15 +136,15 @@ public class RegistrarClientesView extends javax.swing.JInternalFrame {
 
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder("Ingresar Datos del Cliente"));
 
-        fdClienteDNI1.addActionListener(new java.awt.event.ActionListener() {
+        fdClienteDNI.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fdClienteDNI1ActionPerformed(evt);
+                fdClienteDNIActionPerformed(evt);
             }
         });
 
-        fdApellido1.addActionListener(new java.awt.event.ActionListener() {
+        fdApellido.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fdApellido1ActionPerformed(evt);
+                fdApellidoActionPerformed(evt);
             }
         });
 
@@ -112,29 +154,36 @@ public class RegistrarClientesView extends javax.swing.JInternalFrame {
 
         jLabel12.setText("Nombres");
 
-        fdApellido2.addActionListener(new java.awt.event.ActionListener() {
+        fdNombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fdApellido2ActionPerformed(evt);
+                fdNombreActionPerformed(evt);
             }
         });
 
         jLabel14.setText("Dirección");
 
-        fdApellido4.addActionListener(new java.awt.event.ActionListener() {
+        fdDireccion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fdApellido4ActionPerformed(evt);
+                fdDireccionActionPerformed(evt);
             }
         });
 
         jLabel16.setText("Celular");
 
-        fdApellido6.addActionListener(new java.awt.event.ActionListener() {
+        fdCelular.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fdApellido6ActionPerformed(evt);
+                fdCelularActionPerformed(evt);
             }
         });
 
         jLabel7.setIcon(new javax.swing.ImageIcon("D:\\SysPet\\src\\Resources\\NewUser.png")); // NOI18N
+
+        btnGuardarCliente.setText("Guardar Cliente");
+        btnGuardarCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGuardarClienteActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -151,17 +200,21 @@ public class RegistrarClientesView extends javax.swing.JInternalFrame {
                                 .addComponent(jLabel14, javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addComponent(jLabel16)))
                         .addGap(18, 18, 18)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(fdClienteDNI1, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(fdApellido1, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(fdApellido4, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(fdApellido6, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(fdApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(fdDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(fdCelular, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addComponent(fdClienteDNI)
+                                .addGap(1, 1, 1))))
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addComponent(jLabel12)
                         .addGap(18, 18, 18)
-                        .addComponent(fdApellido2, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 152, Short.MAX_VALUE)
-                .addComponent(jLabel7)
+                        .addComponent(fdNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 146, Short.MAX_VALUE)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btnGuardarCliente, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
         jPanel4Layout.setVerticalGroup(
@@ -169,35 +222,31 @@ public class RegistrarClientesView extends javax.swing.JInternalFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(13, 13, 13)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(fdApellido1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(fdApellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel8))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(fdApellido2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(fdNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel12))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel11)
-                    .addComponent(fdClienteDNI1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                    .addComponent(fdClienteDNI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(fdApellido4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(fdDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel14))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(fdApellido6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel16)))
+                    .addComponent(fdCelular, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel16))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel7))
+                .addComponent(jLabel7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnGuardarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
-
-        jButton1.setText("Guardar Cliente");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -205,66 +254,56 @@ public class RegistrarClientesView extends javax.swing.JInternalFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(217, 217, 217))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addContainerGap()))
+                .addContainerGap()
+                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 189, Short.MAX_VALUE)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                    .addContainerGap(106, Short.MAX_VALUE)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(73, 73, 73)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnGuardarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarClienteActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnGuardarClienteActionPerformed
 
-    private void fdApellido2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fdApellido2ActionPerformed
+    private void fdNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fdNombreActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_fdApellido2ActionPerformed
+    }//GEN-LAST:event_fdNombreActionPerformed
 
-    private void fdApellido1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fdApellido1ActionPerformed
+    private void fdApellidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fdApellidoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_fdApellido1ActionPerformed
+    }//GEN-LAST:event_fdApellidoActionPerformed
 
-    private void fdClienteDNI1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fdClienteDNI1ActionPerformed
+    private void fdClienteDNIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fdClienteDNIActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_fdClienteDNI1ActionPerformed
+    }//GEN-LAST:event_fdClienteDNIActionPerformed
 
-    private void fdApellido4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fdApellido4ActionPerformed
+    private void fdDireccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fdDireccionActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_fdApellido4ActionPerformed
+    }//GEN-LAST:event_fdDireccionActionPerformed
 
-    private void fdApellido6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fdApellido6ActionPerformed
+    private void fdCelularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fdCelularActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_fdApellido6ActionPerformed
+    }//GEN-LAST:event_fdCelularActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField fdApellido1;
-    private javax.swing.JTextField fdApellido2;
+    private javax.swing.JButton btnGuardarCliente;
+    private javax.swing.JTextField fdApellido;
     private javax.swing.JTextField fdApellido3;
-    private javax.swing.JTextField fdApellido4;
     private javax.swing.JTextField fdApellido5;
-    private javax.swing.JTextField fdApellido6;
-    private javax.swing.JTextField fdClienteDNI1;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JTextField fdCelular;
+    private javax.swing.JTextField fdClienteDNI;
+    private javax.swing.JTextField fdDireccion;
+    private javax.swing.JTextField fdNombre;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
