@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-06-2017 a las 21:58:49
+-- Tiempo de generación: 24-06-2017 a las 22:31:01
 -- Versión del servidor: 10.1.21-MariaDB
 -- Versión de PHP: 5.6.30
 
@@ -23,6 +23,19 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `animal`
+--
+
+CREATE TABLE `animal` (
+  `Tipo` varchar(50) NOT NULL,
+  `Raza` varchar(50) NOT NULL,
+  `Sexo` varchar(15) NOT NULL,
+  `id_animal` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `cliente`
 --
 
@@ -31,10 +44,10 @@ CREATE TABLE `cliente` (
   `ApellidoC` varchar(50) NOT NULL,
   `DNI` varchar(10) NOT NULL,
   `Direccion` varchar(100) NOT NULL,
-  `Celular` varchar(20) NOT NULL,
+  `Celular` varchar(20) DEFAULT NULL,
   `Email` varchar(50) NOT NULL,
   `id_cliente` int(11) NOT NULL,
-  `Telefono` varchar(50) NOT NULL
+  `Telefono` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -61,6 +74,12 @@ CREATE TABLE `mascota` (
 --
 
 --
+-- Indices de la tabla `animal`
+--
+ALTER TABLE `animal`
+  ADD PRIMARY KEY (`id_animal`);
+
+--
 -- Indices de la tabla `cliente`
 --
 ALTER TABLE `cliente`
@@ -77,6 +96,11 @@ ALTER TABLE `mascota`
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
+--
+-- AUTO_INCREMENT de la tabla `animal`
+--
+ALTER TABLE `animal`
+  MODIFY `id_animal` int(5) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT de la tabla `cliente`
 --
