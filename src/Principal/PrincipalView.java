@@ -12,8 +12,6 @@ import Mascota.ConsultarMascotaView;
 import Mascota.EliminarMascotaView;
 import Mascota.RegistrarMascotaView;
 import Producto.RegistrarProductoView;
-import Producto.RegistrarVentaView;
-import Producto.ReporteVentasView;
 import Ventanas.RegistroVacuna;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -39,9 +37,13 @@ public class PrincipalView extends javax.swing.JFrame {
          } catch (Exception ex) {
          
          }
+                         
         initComponents();
-                
-        setExtendedState(MAXIMIZED_BOTH);        
+        
+        
+        setExtendedState(MAXIMIZED_BOTH);
+        
+        
 
 
     }
@@ -69,9 +71,9 @@ public class PrincipalView extends javax.swing.JFrame {
         jMenuItem7 = new javax.swing.JMenuItem();
         jMenuItem8 = new javax.swing.JMenuItem();
         jMenu8 = new javax.swing.JMenu();
-        jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
         jMenuItem18 = new javax.swing.JMenuItem();
         jMenuItem19 = new javax.swing.JMenuItem();
+        jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
         jMenuItem20 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -191,15 +193,7 @@ public class PrincipalView extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu3);
 
-        jMenu8.setText("Ventas");
-
-        jCheckBoxMenuItem1.setText("Cargar Producto");
-        jCheckBoxMenuItem1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBoxMenuItem1ActionPerformed(evt);
-            }
-        });
-        jMenu8.add(jCheckBoxMenuItem1);
+        jMenu8.setText("Venta");
 
         jMenuItem18.setText("Registrar una Venta Nueva");
         jMenuItem18.addActionListener(new java.awt.event.ActionListener() {
@@ -210,19 +204,17 @@ public class PrincipalView extends javax.swing.JFrame {
         jMenu8.add(jMenuItem18);
 
         jMenuItem19.setText("Ver Reporte de Venta");
-        jMenuItem19.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem19ActionPerformed(evt);
-            }
-        });
         jMenu8.add(jMenuItem19);
 
-        jMenuItem20.setText("Control de Stock de Productos");
-        jMenuItem20.addActionListener(new java.awt.event.ActionListener() {
+        jCheckBoxMenuItem1.setText("Cargar Producto");
+        jCheckBoxMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem20ActionPerformed(evt);
+                jCheckBoxMenuItem1ActionPerformed(evt);
             }
         });
+        jMenu8.add(jCheckBoxMenuItem1);
+
+        jMenuItem20.setText("Control de Stock de Productos");
         jMenu8.add(jMenuItem20);
 
         jMenuBar1.add(jMenu8);
@@ -328,11 +320,10 @@ public class PrincipalView extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
-        // TODO add your handling code here:
         RegistrarClientesView  view  = new RegistrarClientesView();
-        Cliente cliente = new Cliente();
+        Cliente model = new Cliente();
         
-        RegistrarClienteController controller = new RegistrarClienteController(view, cliente);
+        RegistrarClienteController controller = new RegistrarClienteController(view, model);
         escritorio.add(view);
    
     }//GEN-LAST:event_jMenuItem4ActionPerformed
@@ -342,13 +333,22 @@ public class PrincipalView extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
-                   
+        // TODO add your handling code here:
+        /*ConsultarCliente con = new ConsultarCliente();
+        con.setVisible(true);
+        escritorio.add(con);*/
+       
+        
         Clientes clientes = new Clientes();
         ConsultarClientesView consultarClientesView = new ConsultarClientesView();
         ConsultarClientesController controller = new ConsultarClientesController(clientes, consultarClientesView);
-               
+        
+        
         consultarClientesView.setVisible(true);
-        escritorio.add(consultarClientesView);            
+        escritorio.add(consultarClientesView);
+        
+        
+        
         
     }//GEN-LAST:event_jMenuItem6ActionPerformed
 
@@ -404,9 +404,7 @@ public class PrincipalView extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem8ActionPerformed
 
     private void jMenuItem18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem18ActionPerformed
-         RegistrarVentaView eliper = new RegistrarVentaView();
-        eliper.setVisible(true);
-        escritorio.add(eliper);       
+       // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem18ActionPerformed
 
     private void jCheckBoxMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxMenuItem1ActionPerformed
@@ -414,16 +412,6 @@ public class PrincipalView extends javax.swing.JFrame {
         inper.setVisible(true);
         escritorio.add(inper);        // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBoxMenuItem1ActionPerformed
-
-    private void jMenuItem19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem19ActionPerformed
-        ReporteVentasView inper = new ReporteVentasView ();
-        inper.setVisible(true);
-        escritorio.add(inper);
-    }//GEN-LAST:event_jMenuItem19ActionPerformed
-
-    private void jMenuItem20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem20ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem20ActionPerformed
 
     /**
      * @param args the command line arguments

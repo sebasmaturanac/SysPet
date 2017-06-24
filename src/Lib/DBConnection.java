@@ -224,6 +224,8 @@ public abstract class DBConnection {
         this.query = query;
     }
     
-    
+        public static String quotate(String content) {
+        return "'" + content + "'";
+    } // end quotate()
     
 }
