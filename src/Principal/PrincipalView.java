@@ -7,10 +7,7 @@ package Principal;
 
 import Cita.ConsultarCitaView;
 import Cita.RegistrarCitaView;
-import Clientes.Clientes;
-import Clientes.ConsultarClientesController;
-import Clientes.ConsultarClientesView;
-import Clientes.RegistrarClientesView;
+import Clientes.*;
 import Mascota.ConsultarMascotaView;
 import Mascota.EliminarMascotaView;
 import Mascota.RegistrarMascotaView;
@@ -324,9 +321,11 @@ public class PrincipalView extends javax.swing.JFrame {
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
         // TODO add your handling code here:
-        RegistrarClientesView  obj = new RegistrarClientesView();
-        obj.setVisible(true);
-        escritorio.add(obj);
+        RegistrarClientesView  view  = new RegistrarClientesView();
+        Cliente cliente = new Cliente();
+        
+        RegistrarClienteController controller = new RegistrarClienteController(view, cliente);
+        escritorio.add(view);
    
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
