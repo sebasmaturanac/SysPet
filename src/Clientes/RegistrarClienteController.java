@@ -27,8 +27,6 @@ public class RegistrarClienteController {
     public RegistrarClienteController(RegistrarClientesView view, Cliente model){
         this.view = view;
         this.model = model;
-        
-        
         this.view.setVisible(true);
         
         

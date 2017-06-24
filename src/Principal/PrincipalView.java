@@ -13,6 +13,7 @@ import Mascota.EliminarMascotaView;
 import Mascota.RegistrarMascotaView;
 import Producto.RegistrarProductoView;
 import Ventanas.RegistroVacuna;
+import java.awt.Dimension;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.UIManager;
@@ -325,7 +326,13 @@ public class PrincipalView extends javax.swing.JFrame {
         
         RegistrarClienteController controller = new RegistrarClienteController(view, model);
 
+        
+        //Centrar JInternalFrame y Agregar al DesktopPane
+        Dimension desktopSize = escritorio.getSize();
+        Dimension jInternalFrameSize = view.getSize();
+        view.setLocation((desktopSize.width - jInternalFrameSize.width)/2, (desktopSize.height- jInternalFrameSize.height)/2);
         escritorio.add(view);
+        
    
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
