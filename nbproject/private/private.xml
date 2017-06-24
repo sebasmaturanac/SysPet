@@ -3,10 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/D:/SysPet/src/Clientes/RegistrarClienteController.java</file>
+            <file>file:/D:/SysPet/src/Login/LoginView.java</file>
+            <file>file:/D:/SysPet/src/Mascota/Mascotas.java</file>
             <file>file:/D:/SysPet/src/Clientes/Cliente.java</file>
-            <file>file:/D:/SysPet/src/Clientes/ConsultarClientesView.java</file>
             <file>file:/D:/SysPet/src/Clientes/Clientes.java</file>
-            <file>file:/D:/SysPet/src/Clientes/ConsultarClientesController.java</file>
+            <file>file:/D:/SysPet/src/Principal/PrincipalView.java</file>
+            <file>file:/D:/SysPet/src/Login/LoginController.java</file>
+            <file>file:/D:/SysPet/src/Mascota/RegistrarMascotaView.java</file>
+            <file>file:/D:/SysPet/src/Clientes/RegistrarClientesView.java</file>
         </group>
     </open-files>
 </project-private>

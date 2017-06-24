@@ -12,20 +12,24 @@ package Clientes;
 public class Cliente {
 
     private String dni;
-    private String nombre;
-    private String apellidos;
+    private String nombreC;
+    private String apellidosC;
     private String direccion;
     private String telefono;
+    private String celular;
+    private String email;
+
 
     public Cliente() {
     }
 
-    public Cliente(String dni, String nombre, String apellidos, String direccion, String telefono) {
+    public Cliente(String dni, String nombre, String apellidos, String direccion, String telefono, String celular, String email) {
         this.dni = dni;
-        this.nombre = nombre;
-        this.apellidos = apellidos;
+        this.nombreC = nombre;
+        this.apellidosC = apellidos;
         this.direccion = direccion;
         this.telefono = telefono;
+        
     }
 
     public Cliente(String dni, String nombre) {
