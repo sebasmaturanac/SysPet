@@ -324,6 +324,7 @@ public class PrincipalView extends javax.swing.JFrame {
         Cliente model = new Cliente();
         
         RegistrarClienteController controller = new RegistrarClienteController(view, model);
+
         escritorio.add(view);
    
     }//GEN-LAST:event_jMenuItem4ActionPerformed

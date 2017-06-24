@@ -7,6 +7,8 @@ package Clientes;
 
 import Lib.DBConnection;
 import Lib.MySQLDBManager;
+import java.awt.Dimension;
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
@@ -26,7 +28,9 @@ public class RegistrarClienteController {
         this.view = view;
         this.model = model;
         
+        
         this.view.setVisible(true);
+        
         
         this.init();
     }
@@ -43,7 +47,6 @@ public class RegistrarClienteController {
         });
     }
     
-    
     private void registrarCliente(){
         JTextField fdApellido = this.view.getFdApellido();
         JTextField fdNombre = this.view.getFdNombre();
@@ -59,7 +62,7 @@ public class RegistrarClienteController {
         
         DBConnection db = new MySQLDBManager("localhost", "syspet", "root", "");
        
-        String query = "INSERT INTO (Apellido, Nombre, DNI, Telefono) VALUES ("
+        String query = "INSERT INTO Cliente (ApellidoC, NombreC, DNI, Direccion, Telefono) VALUES ("
                 + db.quotate(this.model.getApellidos()) + ","
                 + db.quotate(this.model.getNombre()) + ","
                 + db.quotate(this.model.getDni()) + ","

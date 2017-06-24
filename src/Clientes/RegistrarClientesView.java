@@ -58,6 +58,7 @@ public class RegistrarClientesView extends javax.swing.JInternalFrame {
      */
     public RegistrarClientesView() {
         initComponents();
+
     }
 
     /**
