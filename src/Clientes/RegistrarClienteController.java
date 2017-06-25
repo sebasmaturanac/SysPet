@@ -7,8 +7,6 @@ package Clientes;
 
 import Lib.DBConnection;
 import Lib.MySQLDBManager;
-import java.awt.Dimension;
-import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
@@ -51,26 +49,34 @@ public class RegistrarClienteController {
         JTextField fdDni = this.view.getFdClienteDNI();
         JTextField fdDireccion = this.view.getFdDireccion();
         JTextField fdCelular = this.view.getFdCelular();
+        JTextField fdTelefono = this.view.getFdTelefono ();
+        JTextField fdEmail = this.view.getFdEmail ();
+
         
-        this.model.setApellidos(fdApellido.getText());
+        
+        this.model.setApellido(fdApellido.getText());
         this.model.setNombre(fdNombre.getText());
         this.model.setDni(fdDni.getText());
         this.model.setDireccion(fdDireccion.getText());
-        this.model.setTelefono(fdCelular.getText());
+        this.model.setCelular(fdCelular.getText());
+        this.model.setTelefono(fdTelefono.getText());
+        this.model.setEmail(fdEmail.getText());
         
         DBConnection db = new MySQLDBManager("localhost", "syspet", "root", "");
        
-        String query = "INSERT INTO Cliente (ApellidoC, NombreC, DNI, Direccion, Telefono) VALUES ("
-                + db.quotate(this.model.getApellidos()) + ","
+        String query = "INSERT INTO Cliente (ApellidoC, NombreC, DNI, Direccion, Celular, Telefono, Email) VALUES ("
+                + db.quotate(this.model.getApellido()) + ","
                 + db.quotate(this.model.getNombre()) + ","
                 + db.quotate(this.model.getDni()) + ","
                 + db.quotate(this.model.getDireccion()) + ","
-                + db.quotate(this.model.getTelefono()) + ")";
+                + db.quotate(this.model.getCelular()) + ","
+                + db.quotate(this.model.getTelefono()) + ",";
+           /*     + db.quotate(this.model.getEmail()) + ",";    se rompio*/
             
         int result = db.executeUpdate(query);
         
         if(result > 0){
-            JOptionPane.showMessageDialog(view, "Se han insertado " + result + "registro(s)");
+            JOptionPane.showMessageDialog(view, "Se Registro " + result + "nuevo Cliente(s)");
         }else{
             JOptionPane.showMessageDialog(view, "Ocurrio un problema al intentar insertar un registro.");
         }

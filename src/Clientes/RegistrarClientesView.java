@@ -5,9 +5,11 @@
  */
 package Clientes;
 
+import javax.swing.JTextField;
+
 /**
  *
- * @author yefers
+ * @author Sebas
  */
 public class RegistrarClientesView extends javax.swing.JInternalFrame {
 
@@ -90,9 +92,9 @@ public class RegistrarClientesView extends javax.swing.JInternalFrame {
         jLabel7 = new javax.swing.JLabel();
         btnGuardarCliente = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        fdTelefono = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        fdEmail = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
         fdCelular = new javax.swing.JTextField();
 
@@ -186,6 +188,12 @@ public class RegistrarClientesView extends javax.swing.JInternalFrame {
 
         jLabel2.setText("E-mail");
 
+        fdEmail.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fdEmailActionPerformed(evt);
+            }
+        });
+
         jLabel16.setText("Celular");
 
         fdCelular.addActionListener(new java.awt.event.ActionListener() {
@@ -220,7 +228,7 @@ public class RegistrarClientesView extends javax.swing.JInternalFrame {
                                     .addGroup(jPanel4Layout.createSequentialGroup()
                                         .addComponent(fdClienteDNI)
                                         .addGap(1, 1, 1)))
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(fdTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGroup(jPanel4Layout.createSequentialGroup()
                             .addComponent(jLabel12)
                             .addGap(18, 18, 18)
@@ -228,8 +236,8 @@ public class RegistrarClientesView extends javax.swing.JInternalFrame {
                         .addGroup(jPanel4Layout.createSequentialGroup()
                             .addComponent(jLabel2)
                             .addGap(32, 32, 32)
-                            .addComponent(jTextField2))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(fdEmail))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 145, Short.MAX_VALUE)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(btnGuardarCliente, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -256,7 +264,7 @@ public class RegistrarClientesView extends javax.swing.JInternalFrame {
                     .addComponent(jLabel14))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(fdTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -265,7 +273,7 @@ public class RegistrarClientesView extends javax.swing.JInternalFrame {
                 .addGap(7, 7, 7)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(fdEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(28, Short.MAX_VALUE))
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addComponent(jLabel7)
@@ -290,7 +298,7 @@ public class RegistrarClientesView extends javax.swing.JInternalFrame {
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(64, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -320,6 +328,10 @@ public class RegistrarClientesView extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_fdCelularActionPerformed
 
+    private void fdEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fdEmailActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fdEmailActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnGuardarCliente;
@@ -329,7 +341,9 @@ public class RegistrarClientesView extends javax.swing.JInternalFrame {
     private javax.swing.JTextField fdCelular;
     private javax.swing.JTextField fdClienteDNI;
     private javax.swing.JTextField fdDireccion;
+    private javax.swing.JTextField fdEmail;
     private javax.swing.JTextField fdNombre;
+    private javax.swing.JTextField fdTelefono;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -345,9 +359,15 @@ public class RegistrarClientesView extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
+
+    JTextField getFdTelefono() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    JTextField getFdEmail() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
     
 }
