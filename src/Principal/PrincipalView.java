@@ -12,6 +12,8 @@ import Mascota.ConsultarMascotaView;
 import Mascota.EliminarMascotaView;
 import Mascota.RegistrarMascotaView;
 import Producto.RegistrarProductoView;
+import Reporte.ReporteStockView;
+import Reporte.ReporteVentasView;
 import Ventanas.RegistroVacuna;
 import java.awt.Dimension;
 import java.util.logging.Level;
@@ -65,7 +67,6 @@ public class PrincipalView extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem4 = new javax.swing.JMenuItem();
-        jMenuItem5 = new javax.swing.JMenuItem();
         jMenuItem6 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
@@ -73,9 +74,7 @@ public class PrincipalView extends javax.swing.JFrame {
         jMenuItem8 = new javax.swing.JMenuItem();
         jMenu8 = new javax.swing.JMenu();
         jMenuItem18 = new javax.swing.JMenuItem();
-        jMenuItem19 = new javax.swing.JMenuItem();
         jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
-        jMenuItem20 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenu5 = new javax.swing.JMenu();
@@ -89,6 +88,8 @@ public class PrincipalView extends javax.swing.JFrame {
         jMenuItem16 = new javax.swing.JMenuItem();
         jMenuItem17 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
+        jMenuItem19 = new javax.swing.JMenuItem();
+        jMenuItem20 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -141,21 +142,13 @@ public class PrincipalView extends javax.swing.JFrame {
             }
         });
 
-        jMenuItem4.setText("Insertar Cliente");
+        jMenuItem4.setText("Registrar Cliente");
         jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem4ActionPerformed(evt);
             }
         });
         jMenu1.add(jMenuItem4);
-
-        jMenuItem5.setText("Eliminar Clientes");
-        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem5ActionPerformed(evt);
-            }
-        });
-        jMenu1.add(jMenuItem5);
 
         jMenuItem6.setText("Consultar Clientes");
         jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
@@ -169,7 +162,7 @@ public class PrincipalView extends javax.swing.JFrame {
 
         jMenu3.setText("Registro Mascotas");
 
-        jMenuItem2.setText("Insertar Mascota");
+        jMenuItem2.setText("Registrar Mascota");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem2ActionPerformed(evt);
@@ -205,19 +198,13 @@ public class PrincipalView extends javax.swing.JFrame {
         });
         jMenu8.add(jMenuItem18);
 
-        jMenuItem19.setText("Ver Reporte de Venta");
-        jMenu8.add(jMenuItem19);
-
-        jCheckBoxMenuItem1.setText("Cargar Producto");
+        jCheckBoxMenuItem1.setText("Registrar un Producto");
         jCheckBoxMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBoxMenuItem1ActionPerformed(evt);
             }
         });
         jMenu8.add(jCheckBoxMenuItem1);
-
-        jMenuItem20.setText("Control de Stock de Productos");
-        jMenu8.add(jMenuItem20);
 
         jMenuBar1.add(jMenu8);
 
@@ -276,7 +263,7 @@ public class PrincipalView extends javax.swing.JFrame {
 
         jMenu7.setText("Registro Historial Medico");
 
-        jMenuItem16.setText("Insertar Historial Medico");
+        jMenuItem16.setText("Crear Historial Medico");
         jMenuItem16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem16ActionPerformed(evt);
@@ -295,6 +282,23 @@ public class PrincipalView extends javax.swing.JFrame {
         jMenuBar1.add(jMenu7);
 
         jMenu2.setText("Reportes");
+
+        jMenuItem19.setText("Reporte de Venta");
+        jMenuItem19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem19ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem19);
+
+        jMenuItem20.setText("Reporte de Stock");
+        jMenuItem20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem20ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem20);
+
         jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);
@@ -339,10 +343,6 @@ public class PrincipalView extends javax.swing.JFrame {
         
    
     }//GEN-LAST:event_jMenuItem4ActionPerformed
-
-    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
-        
-    }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
         // TODO add your handling code here:
@@ -425,6 +425,19 @@ public class PrincipalView extends javax.swing.JFrame {
         escritorio.add(inper);        // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBoxMenuItem1ActionPerformed
 
+    private void jMenuItem19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem19ActionPerformed
+       // TODO add your handling code here:
+        ReporteVentasView eliper = new ReporteVentasView();
+        eliper.setVisible(true);
+        escritorio.add(eliper);
+    }//GEN-LAST:event_jMenuItem19ActionPerformed
+
+    private void jMenuItem20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem20ActionPerformed
+         ReporteStockView eliper = new ReporteStockView();
+        eliper.setVisible(true);
+        escritorio.add(eliper);    
+    }//GEN-LAST:event_jMenuItem20ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -493,7 +506,6 @@ public class PrincipalView extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem20;
     private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMenuItem7;
     private javax.swing.JMenuItem jMenuItem8;

@@ -33,13 +33,11 @@ public class RegistrarClienteController {
     
     private void init(){
         
-        JButton btnRegistrarCliente = this.view.getBtnGuardarCliente();
+        JButton btnGuardarCliente;
+        btnGuardarCliente = this.view.getBtnGuardarCliente();
         
-        btnRegistrarCliente.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                registrarCliente();
-            }
+        btnGuardarCliente.addActionListener((ActionEvent e) -> {
+            registrarCliente();
         });
     }
     
@@ -70,15 +68,15 @@ public class RegistrarClienteController {
                 + db.quotate(this.model.getDni()) + ","
                 + db.quotate(this.model.getDireccion()) + ","
                 + db.quotate(this.model.getCelular()) + ","
-                + db.quotate(this.model.getTelefono()) + ",";
-           /*     + db.quotate(this.model.getEmail()) + ",";    se rompio*/
+                + db.quotate(this.model.getTelefono()) + ","
+                + db.quotate(this.model.getEmail()) + ")";
             
         int result = db.executeUpdate(query);
         
         if(result > 0){
-            JOptionPane.showMessageDialog(view, "Se Registro " + result + "nuevo Cliente(s)");
+            JOptionPane.showMessageDialog(view, "Se Registro " + result + "nuevo Cliente");
         }else{
-            JOptionPane.showMessageDialog(view, "Ocurrio un problema al intentar insertar un registro.");
+            JOptionPane.showMessageDialog(view, "Ocurrio un problema al intentar registrar un nuevo Cliente");
         }
  
     }

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Producto;
+package Reporte;
 
 import Mascota.*;
 import Clientes.*;
@@ -74,7 +74,7 @@ public class ReporteVentasView extends javax.swing.JInternalFrame {
 
         setClosable(true);
         setIconifiable(true);
-        setTitle("Clientes - Consulta");
+        setTitle("Reporte - Ventas");
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
