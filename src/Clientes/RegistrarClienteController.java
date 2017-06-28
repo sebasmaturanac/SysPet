@@ -74,7 +74,7 @@ public class RegistrarClienteController {
         int result = db.executeUpdate(query);
         
         if(result > 0){
-            JOptionPane.showMessageDialog(view, "Se Registro " + result + "nuevo Cliente");
+            JOptionPane.showMessageDialog(view, "Se Registro " + result + "nuevo Cliente en la Base de Datos");
         }else{
             JOptionPane.showMessageDialog(view, "Ocurrio un problema al intentar registrar un nuevo Cliente");
         }
