@@ -56,6 +56,21 @@ public class RegistrarClientesView extends javax.swing.JInternalFrame {
     }
 
     /**
+     *
+     * @return
+     */
+ 
+
+    
+    public javax.swing.JTextField getFdEmail() {
+        return fdEmail;
+    }
+
+    public javax.swing.JTextField getFdTelefono() {
+        return fdTelefono;
+    }
+
+    /**
      * Creates new form ConsultarPersona
      */
     public RegistrarClientesView() {
@@ -360,14 +375,6 @@ public class RegistrarClientesView extends javax.swing.JInternalFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel4;
     // End of variables declaration//GEN-END:variables
-
-    JTextField getFdTelefono() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    JTextField getFdEmail() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 
     
 }

@@ -63,7 +63,7 @@ public class Cliente {
      * @param nombre the nombre to set
      */
     public void setNombre(String nombre) {
-        this.nombreC = nombreC;
+        this.nombreC = nombre;
     }
 
     /**
@@ -119,18 +119,15 @@ public class Cliente {
         this.email = email;
     }
 
-    void setCelular(String text) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-   
-    String getCelular() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
     
-    String geteEmail() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+     public String getCelular() {
+        return celular;
     }
 
-}
+    /**
+     * @param celular the telefono to set
+     */
+    public void setCelular(String celular) {
+        this.celular = celular;
+    }
+ }

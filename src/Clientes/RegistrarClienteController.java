@@ -22,6 +22,7 @@ public class RegistrarClienteController {
     public RegistrarClientesView view;
     public Cliente model;
     
+    
     public RegistrarClienteController(RegistrarClientesView view, Cliente model){
         this.view = view;
         this.model = model;
@@ -66,7 +67,7 @@ public class RegistrarClienteController {
                 + db.quotate(this.model.getApellido()) + ","
                 + db.quotate(this.model.getNombre()) + ","
                 + db.quotate(this.model.getDni()) + ","
-                + db.quotate(this.model.getDireccion()) + ")"
+                + db.quotate(this.model.getDireccion()) + ","
                 + db.quotate(this.model.getCelular()) + ","
                 + db.quotate(this.model.getTelefono()) + ","
                 + db.quotate(this.model.getEmail()) + ")";          
